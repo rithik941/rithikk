@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BBQ Orders Dashboard</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="dashboard.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>🍖 BBQ Orders Dashboard</h1>
+  </header>
+
+  <main>
+    <section>
+      <h2>New Order</h2>
+      <form id="orderForm">
+        <input type="text" id="customerName" placeholder="Customer Name" required>
+        <input type="text" id="item" placeholder="BBQ Item" required>
+        <input type="number" id="quantity" placeholder="Quantity" min="1" required>
+        <button type="submit">Add Order</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Order List</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Item</th>
+            <th>Quantity</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="orderTableBody">
+          <!-- Orders will appear here -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+</html>
